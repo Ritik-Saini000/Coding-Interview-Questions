@@ -20,10 +20,11 @@ public class TwoSum {
 				if(arr[i]+arr[j]==sum)
 				{
 					count++;
+					System.out.println(arr[i]+" "+arr[j]+"\n");
 				}
 			}
 		}
-		System.out.println("Frequency="+count);
+		System.out.println("\nFrequency="+count);
 	}
 
 }
