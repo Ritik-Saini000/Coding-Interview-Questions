@@ -23,9 +23,9 @@ public class Duplicate3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int arr[]= {1,5,9,1,5,9};
-		int k=2;
-		int t=3;
+		int arr[]= {1,2,3,1};
+		int k=3;
+		int t=0;
 		System.out.println(containsDuplicate(arr,k,t));
 	}
 
