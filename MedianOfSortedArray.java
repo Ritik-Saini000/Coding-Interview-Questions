@@ -5,10 +5,10 @@ public class MedianOfSortedArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int a[]= {1,3,4,7,10,12};
-		int b[]= {2,3,6,15,16};
+		int a[]= {1,3};
+		int b[]= {2};
 		
-		int c[]=new int[a.length+b.length];
+		double c[]=new double[a.length+b.length];
 	    int count=0;
 	    
 	    for(int i=0;i<a.length;i++)
@@ -21,19 +21,20 @@ public class MedianOfSortedArray {
 	    	c[count++]=b[j];
 	    }
 	    Arrays.sort(c);
-	    int e=0,o=0,flag=0;
+	    double e=0,o=0;
+	    int flag=0;
 	    int len=c.length;
-	    int mid=len/2;
+	    double mid=len/2;
 	    for(int i=0;i<len;i++)
 	    {
 	    	if(len%2==0)
 		    {
 	    		flag=1;
-		    	e=((c[mid-1])+(c[mid]+1))/2;	
+		    	e=((c[(int) (mid-1)])+(c[(int) mid]))/2;	
 		    }
 	    	else
 	    	{
-	    		o=c[mid];
+	    		o=c[(int) mid];
 	    	}
 	    }
 	    for(int i=0;i<len;i++) {
